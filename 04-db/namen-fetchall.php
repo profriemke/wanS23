@@ -1,6 +1,5 @@
 <?php
-$pdo=new PDO('mysql:: host=localhost; dbname=s23wan', 'root', '123', array('charset'=>'utf8'));
-
+    include "db.php";
 $statement = $pdo->prepare("SELECT * FROM namen");
 
 if($statement->execute()) {

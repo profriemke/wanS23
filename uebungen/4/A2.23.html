@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="tophp.php" method="post">
+        <label for="suche">Suche:</label>
+        <input type="text" name="hosen-art" id="suche" list="suchfunktion">
+        <datalist id="suchfunktion">
+            <option value="Chino Hose"></option>
+            <option value="Jeans"></option>
+            <option value="Jogginhose"></option>
+            <option value="Shorts"></option>
+        </datalist>
+        <label for="fit">Schnitttyp:</label>
+        <select name="Schnitttyp" id="fit">
+            <option value="standard-fit">Standard Fit</option>
+            <option value="relaxed-fit">Relaxed Fit</option>
+            <option value="tight-fit">Thight Fit</option>
+        </select>
+        <label for="farbe">Farbe:</label>
+        <select name="Schnitttyp" id="farbe">
+            <option value="schwarz">Schwarz</option>
+            <option value="weiß">Weiß</option>
+            <option value="blau">Blau</option>
+        </select>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
