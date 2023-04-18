@@ -5,7 +5,7 @@ if(!isset($_POST["password"]) OR !isset($_POST["login"])){
 session_start();
 include "db.php";
 $statement = $pdo->prepare("SELECT * FROM user WHERE login=?");
-if($statement->execute(array($_POST["login"]))){
+if($statement->execute(array(htmlspecialchars($_POST["login"])))){
     if($row = $statement->fetch()){
         // angemeldet
         if(password_verify($_POST["password"], $row["password"])){
