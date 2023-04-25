@@ -10,7 +10,13 @@
     <?php
         $pdo = new PDO('mysql:: host=localhost; dbname=s23wan', 'root', '123', array('charset'=>'utf8'));
         $stmt = $pdo->prepare("INSERT INTO buch (titel, autor, verlag, jahr, isbn) VALUES ('Land der Maulwürfe', 'Darth Maul', 'Unterirdisch', 1172, 0815)");
-
+        if($stmt->execute()){
+            //Erfolg
+            echo "eingetragen: ".$pdo->lastInsertId();
+        }else{
+            //Fehler
+            echo "Fehler";
+        }
     ?>
 </body>
 </html>
