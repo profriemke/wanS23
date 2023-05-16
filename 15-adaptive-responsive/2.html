@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+
+        nav ul li a {
+            width: 200px;
+            height: 40px;
+            padding: 10px;
+            margin: 3px;
+            display: block;
+            background-color: orange;
+            color: white;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        @media screen and (max-width: 843px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li a {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Über</a></li>
+            <li><a href="#">Mitte</a></li>
+            <li><a href="#">Unter</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

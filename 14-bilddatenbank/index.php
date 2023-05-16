@@ -21,10 +21,7 @@
             }else{
                 echo "Fehler bei Upload";
             }
-        }else{
-            echo "kein upload";
         }
-
 
         $stmt = $pdo->prepare('SELECT * FROM bilder');
         if($stmt->execute()){
@@ -32,6 +29,7 @@
             while($bild = $stmt->fetch()){
                 echo '<img src="bilder/'.$bild["id"].'.'.$bild["extension"].'" height="100">';
                 echo '<br>'.$bild["description"]."<br>";
+                echo '<a href="edit.php?id='.$bild['id'].'">Edit</a><br>';
             }
             
         }else{
