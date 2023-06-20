@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="content"></div>
+    <script>
+        $.getJSON('http://localhost/wanS23/16-JS/9.php', function (result) {
+            console.log(result)
+            let html = '';
+            for (var i = 0; i < result.length; i++) {
+                html += '<h2>' + result[i].titel + '</h2>';
+                html += '<p>' + result[i].autor + ', ' + 'Verlag: ' + result[i].verlag + '</p>'
+            }
+            console.log(html)
+            $('#content').html(html)
+        })
+    </script>
+
+</body>
+
+</html>

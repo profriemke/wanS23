@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script>
+        var tag = 'Dienstag'
+    </script>
+</head>
+
+<body>
+    <div id="box">Ein div</div>
+    <button onclick="$('#box').css('background-color', 'red')">Hintergrund rot</button>
+    <button onclick="$('#box').css('background-color', 'green')">Hintergrund grün</button>
+    <button onclick="$('#box').html(tag)">Text: Dienstag</button>
+
+</body>
+
+</html>

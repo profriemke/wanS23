@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Hallo</h1>
+    <button onclick="$('h1').hide();">weg damit</button>
+    <button onclick="$('h1').show();">her damit</button>
+    <button onclick="$('h1').toggle();">toggle</button>
+    <button onclick="$('h1').css('color','red').css('background-color','green');">rot</button>
+    <button onclick="$('h1').html('nix');">hallo</button>
+    <script>
+        console.log($('h1').html())
+    </script>
+</body>
+
+</html>

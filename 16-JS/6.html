@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <style>
+        #title {
+            width: 300px;
+            padding: 5px;
+            background-color: coral;
+        }
+
+        #info {
+            width: 300px;
+            padding: 5px;
+            background-color: rgb(226, 178, 160);
+            display: none;
+          
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            //$('#info').hide()
+            $('#title').mouseenter(
+                function () {
+                    $('#info').fadeIn(1000)
+                }
+            )
+            $('#title').mouseleave(
+                function () {
+                    $('#info').fadeOut(1000)
+                }
+            )
+        })
+
+    </script>
+</head>
+
+<body>
+
+    <div id="title">Eine wichtige Information</div>
+    <div id="info">Heute ist der große Web-Dienstag mit Übung und 2x Vorlesung.</div>
+
+
+</body>
+
+</html>
