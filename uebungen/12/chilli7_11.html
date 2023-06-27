@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Magic Boxes 2</title>
+    <style>
+        .box {
+        width: 100px;
+        height: 100px;
+        }
+        #red{
+        background-color: red;
+        }
+        #green{
+        background-color: green;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="box" id="red"></div>
+    <div class="box" id="green"></div>
+    <button id="magic">Magic</button>
+    <script>
+        $("#red").hide();
+        $( "#magic" ).click(function() {
+                    $( "#red" ).toggle( "slow");
+                    $( "#green" ).toggle( "slow");
+                });
+    </script>
+</body>

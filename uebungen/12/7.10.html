@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        #box1 {
+            background-color: red;
+        }
+
+        #box2 {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <button onclick="$('#box1').show()">rot an</button>
+    <button onclick="$('#box1').hide()">rot aus</button>
+    <button onclick="$('#box2').show()">grün an</button>
+    <button onclick="$('#box2').hide()">grün aus</button>
+</body>
+
+</html>
